@@ -13,11 +13,15 @@
             >
               About US
             </h1>
+            <img
+              :src="ImageLogo"
+              class="h-12 rounded-xl w-auto sm:h-14 text-green-500 mb-2"
+              alt="efg mainlog"
+            />
             <p class="text-white text-justify font-normal text-sm">
-              We do our best to offer a Good Wash, Good Value, Fast Service and
-              a Friendly Experience to every customer. Try us out. If you don't
-              experience all four, talk to a manager and help us make every car
-              a show car.
+              Euro Foods Group is a leading international manufacturer and
+              distributor of frozen and fresh foods, serving the restaurant,
+              catering and specialist supermarket sectors.
             </p>
           </div>
         </div>
@@ -32,25 +36,19 @@
               <routerLink to="/">Home</routerLink>
             </li>
             <li class="hover:text-green-500">
-              <routerLink to="services">Services</routerLink>
+              <routerLink to="about">About</routerLink>
+            </li>
+            <li class="hover:text-green-500">
+              <routerLink to="Products">Products</routerLink>
+            </li>
+            <li class="hover:text-green-500">
+              <routerLink to="contacts">Contact</routerLink>
             </li>
             <li class="hover:text-green-500">
               <routerLink to="gallery">Gallery</routerLink>
             </li>
             <li class="hover:text-green-500">
-              <routerLink to="contact">Contact Us</routerLink>
-            </li>
-            <li class="hover:text-green-500">
-              <routerLink to="about">About Us</routerLink>
-            </li>
-            <li class="hover:text-green-500">
-              <routerLink to="appointment">Appointment</routerLink>
-            </li>
-            <li class="hover:text-green-500">
-              <routerLink to="checkout">CheckOut</routerLink>
-            </li>
-            <li class="hover:text-green-500">
-              <routerLink to="ratings">Ratings</routerLink>
+              <routerLink to="supply">Supply Us</routerLink>
             </li>
           </ul>
         </div>
@@ -60,12 +58,20 @@
           >
             Social
           </h1>
-          <div class="flex gap-x-4">
-            <a href="https://www.instagram.com/executivewash/" target="_blank"
-              ><fa size="2x" :icon="['fab', 'instagram']"
+          <div class="flex gap-x-3">
+            <a href="https://twitter.com/eurofoodsgroup" target="_blank"
+              ><fa size="2x" color="#00acee" :icon="['fab', 'twitter']"
             /></a>
-            <a href="https://www.facebook.com/execwashdetail" target="_blank"
-              ><fa size="2x" :icon="['fab', 'facebook-square']"
+            <a href="https://www.facebook.com/eurofoodsgroup" target="_blank"
+              ><fa color="#3b5998" size="2x" :icon="['fab', 'facebook-square']"
+            /></a>
+            <a href="https://twitter.com/eurofoodsgroup" target="_blank"
+              ><fa size="2x" color="#0077b5" :icon="['fab', 'linkedin']"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCWmbqmPt6a6fhlsyXeEvodQ"
+              target="_blank"
+              ><fa size="2x" color="#FF0000" :icon="['fab', 'youtube']"
             /></a>
           </div>
         </div>
@@ -73,11 +79,11 @@
           <h1
             class="text-gray-400 font-semibold text-base mb-6 uppercase tracking-wide"
           >
-            Subscribe to our newsletter
+            Newsletter
           </h1>
           <p class="text-white text-justify font-normal text-sm">
-            Fill out the form and we will let you know about special offers,
-            coupons and news.
+            Fill out the form and we will let you know about special offers and
+            business news.
           </p>
           <div
             class="grid grid-cols-3 gap-x-2 max-w-lg justify-center mx-auto my-10"
@@ -98,7 +104,7 @@
       <div class="py-3 pb-10">
         <p class="text-sm text-center">
           {{ yearJS }} &copy;
-          <span class="font-semibold">Executive Wash & Details</span>
+          <span class="font-semibold">Euro Foods Group</span>
         </p>
       </div>
     </div>
@@ -108,12 +114,14 @@
 <script>
 const yearJS = new Date().getFullYear();
 
+import ImageLogo from "../../assets/images/logoEFG.png";
 export default {
   name: "footerCom",
   components: {},
   data() {
     return {
       yearJS,
+      ImageLogo,
     };
   },
 };

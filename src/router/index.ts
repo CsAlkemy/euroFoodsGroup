@@ -47,6 +47,24 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import(/*webpackChunkName:"Rating"*/ "../views/Ratings.vue"),
   },
+  {
+    path: "/contacts",
+    name: "Contacts",
+    component: () =>
+      import(/*webpackChunkName:"Contacts"*/ "../views/Contacts.vue"),
+  },
+  {
+    path: "/products",
+    name: "Products",
+    component: () =>
+      import(/*webpackChunkName:"Products"*/ "../views/Products.vue"),
+  },
+  {
+    path: "/supply",
+    name: "Supply Us",
+    component: () =>
+      import(/*webpackChunkName:"SupplyUs"*/ "../views/SupplyUs.vue"),
+  },
 ];
 
 const router = createRouter({
@@ -63,7 +81,7 @@ const router = createRouter({
 });
 
 router.afterEach((to, from) => {
-  window.document.title = `${String(to.name)} | Executive Car Wash & Details`;
+  window.document.title = `${String(to.name)} | Euro Foods Group`;
 });
 
 export default router;

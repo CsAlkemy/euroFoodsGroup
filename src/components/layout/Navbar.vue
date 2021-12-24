@@ -35,12 +35,12 @@
         </PopoverGroup>
         <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <router-link
-            to="appointment"
+            to="supply"
             exact
             exact-active-class="bg-purple-500"
             class="bg-green-500 hover:shadow-lg hover:bg-gray-900  text-white ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium"
           >
-            Appointment
+            Supply Us
           </router-link>
         </div>
       </div>
@@ -110,12 +110,12 @@
             <div>
               <router-link
                 @click="accept(close)"
-                to="appointment"
+                to="supply"
                 exact
                 exact-active-class="bg-black"
                 class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-500 hover:bg-purple-500"
               >
-                Appointment
+                Supply Us
               </router-link>
             </div>
           </div>
@@ -126,7 +126,7 @@
 </template>
 
 <script>
-import Image from "@/assets/images/logo.png";
+import Image from "@/assets/images/logoEFG.png";
 import {
   Popover,
   PopoverButton,
@@ -135,12 +135,12 @@ import {
 } from "@headlessui/vue";
 import {
   HomeIcon,
-  FingerPrintIcon,
   PhotographIcon,
   DeviceMobileIcon,
   MenuIcon,
   XIcon,
-  IdentificationIcon,
+  OfficeBuildingIcon,
+  ShoppingBagIcon,
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 
@@ -151,9 +151,14 @@ const navItems = [
     icon: HomeIcon,
   },
   {
-    name: "Services",
-    href: "services",
-    icon: FingerPrintIcon,
+    name: "About Us",
+    href: "about",
+    icon: OfficeBuildingIcon,
+  },
+  {
+    name: "Products",
+    href: "products",
+    icon: ShoppingBagIcon,
   },
   {
     name: "Gallery",
@@ -162,13 +167,8 @@ const navItems = [
   },
   {
     name: "Contact",
-    href: "contact",
+    href: "contacts",
     icon: DeviceMobileIcon,
-  },
-  {
-    name: "About Us",
-    href: "about",
-    icon: IdentificationIcon,
   },
 ];
 
