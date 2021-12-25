@@ -24,12 +24,8 @@
             </p>
           </div>
         </div>
-        <div class="flex my-4">
-          <p class="text-2xl font-medium">$</p>
-          <h1 class="text-7xl font-bold">{{ item.price }}</h1>
-          <p class="text-2xl font-medium">/up</p>
-        </div>
-        <h3 class="text-gray-500 text-base font-medium mb-4">Includes</h3>
+        <div class="flex my-4"></div>
+        <h3 class="text-gray-500 text-base font-medium mb-4">Items Name</h3>
         <ul>
           <li>
             <p v-for="include in item.includes" :key="include.id" class="">
@@ -42,10 +38,10 @@
         </ul>
       </div>
       <router-link
-        to="appointment"
+        to="#"
         class=" p-2 bg-green-500 hover:bg-purple-500 text-white place-items-center mb-3 mx-5 text-center rounded-md"
       >
-        Reserve Now
+        Buy Now
       </router-link>
     </div>
   </div>

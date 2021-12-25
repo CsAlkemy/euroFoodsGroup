@@ -42,7 +42,7 @@
               <routerLink to="Products">Products</routerLink>
             </li>
             <li class="hover:text-green-500">
-              <routerLink to="contacts">Contact</routerLink>
+              <routerLink to="contact">Contact</routerLink>
             </li>
             <li class="hover:text-green-500">
               <routerLink to="gallery">Gallery</routerLink>

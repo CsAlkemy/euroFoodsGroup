@@ -12,14 +12,14 @@
             <h1
               class="text-4xl uppercase font-bold text-white tracking-normal lg:tracking-widest mb-5"
             >
-              Need Help? <br />
-              We are here <br />
-              For You.
+              Looking to be <br />
+              a supplier <br />
+              of EFG?
             </h1>
             <router-link
-              to="contact"
+              to="supply"
               class="p-3 px-7 text-lg font-semibold bg-white hover:bg-green-500 mt-5 text-black hover:text-white rounded-sm shadow-lg"
-              >Contact Us</router-link
+              >Supply Us</router-link
             >
           </div>
           <div
@@ -30,19 +30,19 @@
               <div>
                 <h1 class="text-xl font-semibold uppercase">We are open</h1>
                 <p class="text-base font-normal">
-                  7 Days, 8am - 6pm
+                  24/7
                 </p>
               </div>
             </div>
             <a
-              href="tel:(954) 534-9323"
+              href="tel:441633636000"
               class="inline-flex gap-x-4 hover:text-green-500"
             >
               <PhoneIcon class="h-9 w-9" />
               <div>
                 <h1 class="text-xl font-semibold uppercase">Call Us</h1>
-                <a href="tel:(954) 534-9323" class="text-base font-normal">
-                  (954) 534-9323
+                <a href="tel:441633636000" class="text-base font-normal">
+                  +441633636000
                 </a>
               </div>
             </a>
@@ -51,7 +51,7 @@
               <div>
                 <h1 class="text-xl font-semibold uppercase">We are here</h1>
                 <p class="text-base font-normal">
-                  12351 NW 18 St Pembroke Pines, Fl 33026
+                  Llantarnam Park Way Cwmbran Torfaen NP44 3GA
                 </p>
               </div>
             </div>
@@ -62,7 +62,7 @@
   </div>
 </template>
 <script>
-import Car from "@/assets/images/suvcta.png";
+import Bike from "../../assets/images/foodbike.png";
 import { ClockIcon, MapIcon, PhoneIcon } from "@heroicons/vue/solid";
 
 export default {
@@ -74,13 +74,13 @@ export default {
   },
   date() {
     return {
-      Car,
+      Bike,
     };
   },
   props: {
     img: {
       type: String,
-      default: Car,
+      default: Bike,
     },
   },
 };

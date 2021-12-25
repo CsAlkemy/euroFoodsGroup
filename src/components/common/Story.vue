@@ -3,9 +3,11 @@
     <div class="mt-16 mb-12">
       <h1 class="text-5xl font-extrabold mb-12 ">Our Story</h1>
     </div>
-    <div class="grid justify-items-end grid-cols-1 md:grid-cols-3 gap-y-5">
+    <div
+      class="grid justify-items-end grid-cols-1 md:grid-cols-3 gap-y-2 mb-10"
+    >
       <div class="col-span-2">
-        <div class="grid grid-rows-1 gap-y-5">
+        <div class="grid grid-rows-1 gap-y-2">
           <div
             v-for="item in storyData"
             :key="item.name"
@@ -27,20 +29,22 @@
   </div>
 </template>
 <script>
-import Img from "@/assets/images/6.png";
+import Img from "@/assets/images/bannerStory.png";
 const storyData = [
   {
-    class: "bg-gray-200 font-semibold",
+    class: "bg-green-50 font-semibold",
     name:
-      "Executive Wash was established in 2001. It is a family owned business and a lot of pride is taken into its integrity. We are one of the very few still existent high quality hand washes.",
+      "With an initial investment of £20, Euro Foods Group founder, Shelim Hussain MBE began his adventure into the frozen foods industry.",
   },
   {
+    class: "bg-white font-semibold",
     name:
-      "What makes us stand out from the rest is that we have put in place many things to help achieve a complex and speedy wash without jeopardizing the quality of the outcome of the service being provided. Our establishment truly emphasizes the importance of the meaning quality to our staff and detailers.",
+      "Established in 1991, the company began the journey by supplying the Indian restaurants and takeaways in Wales and the West Country. With hard work and determination the business then developed rapidly, and the supply chain became national.",
   },
   {
+    class: "bg-white font-semibold",
     name:
-      "Executive Wash does not take any shortcuts when it comes customer service and we are geniuses in choosing the right product for your vehicle. Come see us soon and witness what we are about.",
+      "The story has many successful chapters, Euro Foods started with frozen, fresh and ambient food distribution – as demand grew, Euro Foods progressed their services into manufacturing and established",
   },
 ];
 

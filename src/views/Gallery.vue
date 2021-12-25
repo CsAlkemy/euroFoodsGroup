@@ -11,10 +11,10 @@ import Cta from "@/components/common/Cta.vue";
 import NewsLetter from "@/components/common/NewsLetter.vue";
 
 const HeroData = {
-  titleOne: "Our Team Makes",
-  titleTwo: ["Impossible", "Possible"],
+  titleOne: "Company",
+  titleTwo: ["Image", "Gallery"],
   subtitle: "",
-  bgImage: "bgImageGallery",
+  bgImage: "",
 };
 
 export default {

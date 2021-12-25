@@ -167,7 +167,7 @@ const navItems = [
   },
   {
     name: "Contact",
-    href: "contacts",
+    href: "contact",
     icon: DeviceMobileIcon,
   },
 ];

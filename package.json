@@ -1,7 +1,8 @@
 {
-  "name": "executive_wash_0.1",
+  "name": "euro-foods-g",
   "version": "0.1.0",
   "private": true,
+  "author": "Alkemy Hossain",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"

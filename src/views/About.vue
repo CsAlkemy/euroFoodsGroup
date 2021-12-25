@@ -1,7 +1,8 @@
 <template>
   <div>
     <Story />
-    <Banner />
+    <Team />
+    <Brands />
     <Cta />
     <Testimonial />
     <News />
@@ -10,16 +11,18 @@
 <script>
 import Story from "@/components/common/Story.vue";
 import Testimonial from "@/components/common/TestimonialCard.vue";
-import Banner from "@/components/Home/Banner.vue";
+import Brands from "@/components/common/Brands.vue";
 import Cta from "@/components/common/Cta.vue";
 import News from "@/components/common/NewsLetter.vue";
+import Team from "@/components/common/Team.vue";
 
 export default {
   name: "About Us",
   components: {
     Story,
+    Team,
     Testimonial,
-    Banner,
+    Brands,
     Cta,
     News,
   },

@@ -34,21 +34,21 @@ const cardData = [
   {
     bgClass: "bg-email",
     textStyle: "text-2xl md:text-xl lg:text-xl",
-    text: "Info@execwash.com",
+    text: "Info@efg.com",
     icon: MailOpenIcon,
-    link: "mailto:info@execwash.com",
+    link: "mailto:Info@efg.com",
   },
   {
     bgClass: "bg-phone",
     textStyle: "text-2xl",
-    text: "+1 (954) 534-9323",
+    text: "+441633636000",
     icon: PhoneIcon,
-    link: "tel:+1 (954) 534-9323",
+    link: "tel:+441633636000",
   },
   {
     bgClass: "bg-location",
     textStyle: "text-2xl",
-    text: "12351 NW 18 ST PEMBROKE PINES, FL 33026",
+    text: "Llantarnam Park Way Cwmbran Torfaen NP44 3GA",
     icon: LocationMarkerIcon,
   },
 ];

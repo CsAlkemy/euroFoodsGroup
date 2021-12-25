@@ -33,39 +33,39 @@ import VueEasyLightbox from "vue-easy-lightbox";
 const imgSrc = [
   {
     id: 0,
-    title: "Executive Wash Poster",
-    src: require("@/assets/images/poster.jpg"),
+    title: "Title",
+    src: require("@/assets/images/gallery/one.jpg"),
   },
   {
     id: 1,
-    title: "Executive Wash Hand Wash",
-    src: require("@/assets/images/erod7.jpg"),
+    title: " Title",
+    src: require("@/assets/images/gallery/two.jpg"),
   },
   {
     id: 2,
-    title: "Car One",
-    src: require("@/assets/images/carOne.jpg"),
+    title: "Title",
+    src: require("@/assets/images/gallery/three.png"),
   },
   {
     id: 3,
-    title: "Executive Wash Hand Wash",
-    src: require("@/assets/images/erod2.jpg"),
+    title: " Title",
+    src: require("@/assets/images/gallery/four.jpg"),
     class: "col-span-1 md:col-span-2",
   },
   {
     id: 4,
-    title: "Executive Wash",
-    src: require("@/assets/images/erod4.jpg"),
+    title: "Title",
+    src: require("@/assets/images/gallery/five.jpg"),
   },
   {
     id: 5,
-    title: "best car wash in town",
-    src: require("@/assets/images/6.png"),
+    title: "Title",
+    src: require("@/assets/images/gallery/six.jpg"),
   },
   {
     id: 6,
-    title: "Executive Wash",
-    src: require("@/assets/images/erod3.jpg"),
+    title: "Title",
+    src: require("@/assets/images/gallery/seven.png"),
     class: "col-span-1 md:col-span-2",
   },
 ];

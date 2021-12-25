@@ -7,12 +7,6 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/*webpackChunkName:"Home"*/ "../views/Home.vue"),
   },
   {
-    path: "/services",
-    name: "Services",
-    component: () =>
-      import(/*webpackChunkName:"services"*/ "../views/Services.vue"),
-  },
-  {
     path: "/gallery",
     name: "Gallery",
     component: () =>
@@ -25,33 +19,9 @@ const routes: Array<RouteRecordRaw> = [
       import(/*webpackChunkName:"contact"*/ "../views/Contact.vue"),
   },
   {
-    path: "/appointment",
-    name: "Appointment",
-    component: () =>
-      import(/*webpackChunkName:"Appointment"*/ "../views/Appointment.vue"),
-  },
-  {
     path: "/about",
     name: "About",
     component: () => import(/*webpackChunkName:"about"*/ "../views/About.vue"),
-  },
-  {
-    path: "/checkout",
-    name: "Checkout",
-    component: () =>
-      import(/*webpackChunkName:"Checkout"*/ "../views/Checkout.vue"),
-  },
-  {
-    path: "/ratings",
-    name: "Ratings",
-    component: () =>
-      import(/*webpackChunkName:"Rating"*/ "../views/Ratings.vue"),
-  },
-  {
-    path: "/contacts",
-    name: "Contacts",
-    component: () =>
-      import(/*webpackChunkName:"Contacts"*/ "../views/Contacts.vue"),
   },
   {
     path: "/products",

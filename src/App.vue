@@ -2,7 +2,6 @@
   <Navbar />
   <router-view />
   <Footer />
-  <!--<ContactFooter class="inline sm:hidden" />-->
 </template>
 
 <style lang="scss"></style>

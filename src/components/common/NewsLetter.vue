@@ -6,8 +6,8 @@
       </h1>
       <p class="text-lg font-normal text-center mb-6">
         Fill out the form and
-        <span class="font-semibold">Executive Wash & Detail</span> will let you
-        know about <br />
+        <span class="font-semibold">Euro Foods Group</span> will let you know
+        about <br />
         special offers, coupons and news.
       </p>
       <div

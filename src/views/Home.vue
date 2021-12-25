@@ -1,141 +1,135 @@
 <template>
   <div>
-    <Hero :data="HeroData" />
+    <Hero />
     <WorkCard />
-    <FeaturCard />
-    <Banner />
-    <Service :data="PricingTitleData[0]" :packages="priceDataOne" />
+    <History />
+    <Quality />
     <Cta />
+    <Brands />
+    <!-- <FeaturCard />-->
+    <!--<Banner /> -->
+    <Service :data="PricingTitleData[0]" :packages="priceDataOne" />
+    <Contact />
     <Feedback />
     <NewsLetter />
   </div>
 </template>
 
 <script>
-import Hero from "@/components/common/Hero.vue";
+import Hero from "@/components/Home/Hero.vue";
 import WorkCard from "@/components/common/VhiclTypeCard.vue";
-import FeaturCard from "@/components/common/FeatureCard.vue";
 import Service from "@/components/common/PricingParent.vue";
 import Cta from "@/components/common/Cta.vue";
 import Feedback from "@/components/common/TestimonialCard.vue";
 import NewsLetter from "@/components/common/NewsLetter.vue";
 import Banner from "@/components/Home/Banner.vue";
+import History from "@/components/common/History.vue";
+import Quality from "@/components/common/Quality.vue";
+import Brands from "@/components/common/Brands.vue";
+import Contact from "@/components/common/ContactForm.vue";
 // Data Section
-const HeroData = {
-  titleOne: "Executive ",
-  titleTwo: ["Wash & ", "Detail"],
-  subtitle:
-    "Best Full Service Car Wash in Pembroke Pines with 2 decades worth of experience",
-  bgImage: "bgImageHome object-cover",
-};
-
 const PricingTitleData = [
   {
-    title: "For Everyone",
-    smallTitle: "Affordable Pricing",
+    title: "Our Products",
     class: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4",
   },
 ];
 
 const priceDataOne = [
   {
-    title: "SUPERVISOR'S PACKAGE",
-    price: 15,
-    img: require("@/assets/images/erod3.jpg"),
+    title: "Meat & Poultry",
+    img: require("@/assets/images/meat.png"),
     link: "",
     includes: [
-      { inc: "Exterior Wash", id: 1 },
-      { inc: "Outside Windows", id: 2 },
-      { inc: "Towel Dry", id: 3 },
+      { inc: "Chicken Breast Fillet", id: 1 },
+      { inc: "Chicken Breast Fillet", id: 2 },
+      { inc: "Chicken Breast Fillet", id: 3 },
+      { inc: "Chicken Breast Fillet", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "DIRECTOR'S PACKAGE",
-    price: 20,
-    img: require("@/assets/images/carOne.jpg"),
+    title: "Fish & Seafood",
+    img: require("@/assets/images/fish.png"),
     link: "",
     includes: [
-      { inc: "Exterior Wash", id: 1 },
-      { inc: "Vacuum All Carpets", id: 2 },
-      { inc: "Outside/Inside Windows", id: 3 },
-      { inc: "Tire Shine", id: 4 },
-      { inc: "Interior Wipe Down", id: 5 },
-      { inc: "Air Freshener", id: 6 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "MANAGER's PACKAGE",
-    price: 25,
-    img: require("@/assets/images/erod7.jpg"),
+    title: "Dairy Products",
+    img: require("@/assets/images/dairy.png"),
     link: "",
     includes: [
-      { inc: "Exterior Wash", id: 1 },
-      { inc: "Vacuum All Carpets", id: 2 },
-      { inc: "Fender Dressing", id: 3 },
-      { inc: "Door Jams", id: 4 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "VICE PRESIDENTIAL",
-    price: 35,
-    img: require("@/assets/images/erod2.jpg"),
+    title: "Fruit & Vegetables",
+    img: require("@/assets/images/fruit.png"),
     link: "",
     includes: [
-      { inc: "Includes Manager’s Package", id: 1 },
-      { inc: "Super Shine Spray Wax", id: 2 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "PRESIDENTIAL PACKAGE",
-    price: 65,
-    img: require("@/assets/images/machine wash.jpg"),
+    title: "Herbs & Spices",
+    img: require("@/assets/images/herbs.png"),
     link: "",
     includes: [
-      { inc: "Exterior Works", id: 1 },
-      { inc: "Carnuaba Wax Service", id: 2 },
-      { inc: "Includes Manager’s Package", id: 3 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: true,
     bg: "bg-gray-900 text-white",
   },
   {
-    title: "ULTRA-PRESIDENTIAL PACKAGE",
-    price: 80,
-    img: require("@/assets/images/erod8.jpg"),
+    title: "Oil, Fat & Ghee",
+    img: require("@/assets/images/honey.png"),
     link: "",
     includes: [
-      { inc: "Includes Manager’s Package", id: 1 },
-      { inc: "Carnuba PASTE Wax Service", id: 2 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "EXECUTIVE PACKAGE",
-    price: 100,
-    img: require("@/assets/images/erod9.jpg"),
+    title: "Drinks",
+    img: require("@/assets/images/drinks.png"),
     link: "",
     includes: [
-      { inc: "Complete Interior Cleaning", id: 1 },
-      { inc: "Leather treatment", id: 2 },
-      { inc: "Includes Manager’s Package", id: 3 },
-      { inc: "Vinyl Treatment", id: 4 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
   {
-    title: "CHAIRMAN'S PACKAGE",
-    price: 150,
-    img: require("@/assets/images/vip.jpg"),
+    title: "Packaging",
+    img: require("@/assets/images/package.png"),
     link: "",
     includes: [
-      { inc: "Starting at $150.00", id: 1 },
-      { inc: "Full Vehicle Detail", id: 2 },
-      { inc: "Ultimate Interior & Exterior", id: 3 },
-      { inc: "Includes Presidential Package", id: 4 },
+      { inc: "Item name one", id: 1 },
+      { inc: "Item name two", id: 2 },
+      { inc: "Item name thre", id: 3 },
+      { inc: "Item name four", id: 4 },
     ],
     isPopular: false,
   },
@@ -146,17 +140,19 @@ export default {
   components: {
     Hero,
     WorkCard,
-    FeaturCard,
     Service,
     Cta,
     Feedback,
     NewsLetter,
     Banner,
+    History,
+    Quality,
+    Brands,
+    Contact,
   },
 
   data() {
     return {
-      HeroData,
       priceDataOne,
       PricingTitleData,
     };

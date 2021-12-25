@@ -12,22 +12,22 @@
         <div class=" mb-40 ">
           <div class="flex gap-x-3 mb-7">
             <PhoneIcon class="h-7 w-7" />
-            <a class="text-xl font-medium" href="tel:(954) 534-9323"
-              >(954) 534-9323</a
+            <a class="text-xl font-medium" href="tel:+441633636000"
+              >+441633636000</a
             >
           </div>
 
           <div class="flex gap-x-3 mb-7">
             <MailOpenIcon class="h-7 w-7" />
-            <a class="text-xl font-medium" href="mailto:info@execwash.com"
-              >Info@execwash.com</a
+            <a class="text-xl font-medium" href="mailto:info@efg.com"
+              >Info@efg.com</a
             >
           </div>
 
           <div class="flex gap-x-3 mb-7">
             <LocationMarkerIcon class="h-7 w-7" />
             <a class="text-xl font-medium" href="#">
-              12351 Nw 18 st Pembork Pines, FL 33026</a
+              Llantarnam Park Way Cwmbran Torfaen NP44 3GA</a
             >
           </div>
         </div>
@@ -61,13 +61,13 @@
             </div>
             <div class="mb-4">
               <label class="block mb-2" for="service">
-                Services
+                Food Inquery
               </label>
               <input
                 class=" w-full p-2 border-2 border-green-500 rounded-md"
                 id="service"
                 type="service"
-                placeholder="Swirl Remove"
+                placeholder="Sea Food"
               />
             </div>
             <div class="mb-4">

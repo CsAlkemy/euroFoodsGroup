@@ -38,26 +38,26 @@ const data = [
   {
     id: 2,
     text:
-      "I am from NYC and this is the best car wash from north to south. Guys pay full attention to all the details. Price is reasonable as well. It's only hand wash",
+      "I am from Wailes and this is the best Frozen Food Provider from north to south. Guys pay full attention to all the details. Price is reasonable as well.",
     name: "Alex S Ali ",
-    type: "CAR OWNER",
+    type: "Customer",
     img: require("../../assets/images/user2.png"),
   },
   {
     id: 3,
     text:
-      "Best car wash around. Always do an amazing job, detailed work, price is great. I moved to plantation and still drive out to get my car detailed",
+      "I am from Wailes and this is the best Frozen Food Provider from north to south. Guys pay full attention to all the details. Price is reasonable as well.",
     name: "Ryan Yocum ",
-    type: "CAR OWNER",
+    type: "Customer",
     img: require("../../assets/images/user1.png"),
     color: "bg-gray-900 text-white",
   },
   {
     id: 4,
     text:
-      "Executive car wash has been detailing my cars for a couple years and they continue to meet my expectations. Very nice touch with their updated technology and comfortable inside air condition seating while you wait.",
+      "I am from Wailes and this is the best Frozen Food Provider from north to south. Guys pay full attention to all the details. Price is reasonable as well.",
     name: "George Law ",
-    type: "CAR OWNER",
+    type: "Customer",
     img: require("../../assets/images/user3.png"),
   },
 ];
