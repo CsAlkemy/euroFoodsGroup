@@ -1,7 +1,7 @@
 module.exports = {
   // ...other vue-cli plugin options...
   pwa: {
-    name: "Executive Wash & Detail",
+    name: "Euro Foods",
     themeColor: "#4DBA87",
     msTileColor: "#000000",
     appleMobileWebAppCapable: "yes",

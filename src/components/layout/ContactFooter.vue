@@ -14,7 +14,7 @@
       /></a>
 
       <a
-        href="mailto:info@executivewashpines.com"
+        href="mailto:info@efg.com"
         class="p-4 rounded-full  hover:bg-green-200 hover:text-gray-900 "
         ><MailIcon class="h-8 w-8"
       /></a>
